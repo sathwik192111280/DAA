@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+ int Num1, Num2, i, GCD;
+ printf("Please Enter two integer Values \n");
+ scanf("%d %d", &Num1, &Num2);
+ for(i = 1; i <= Num1 && i <= Num2; i++)
+ {
+ if(Num1 % i == 0 && Num2 % i == 0)
+ GCD = i;
+ }
+printf("GCD of %d and %d is = %d", Num1, Num2, GCD);
+ return 0;
+}
+
+
+OUTPUT
+
+Please Enter two integer Values
+29
+63
+GCD of 29 and 63 is = 1
+--------------------------------
+Process exited after 7.583 seconds with return value 0
+Press any key to continue . . .

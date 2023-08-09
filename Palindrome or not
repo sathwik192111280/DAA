@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <string.h>
+int main(){
+ char string1[20];
+ int i, length;
+ int flag = 0;
+ 
+ printf("Enter a string:");
+ scanf("%s", string1);
+ 
+ length = strlen(string1);
+ 
+ for(i=0;i < length ;i++){
+ if(string1[i] != string1[length-i-1]){
+ flag = 1;
+ break;
+ }
+ }
+ 
+ if (flag) {
+ printf("%s is not a palindrome", string1);
+ } 
+ else {
+ printf("%s is a palindrome", string1);
+ }
+ return 0;
+}
+
+
+OUTPUT
+
+Enter a string:143
+143 is not a palindrome
+--------------------------------
+Process exited after 4.759 seconds with return value 0
+Press any key to continue . . .
+
+Enter a string:121
+121 is a palindrome
+--------------------------------
+Process exited after 2.181 seconds with return value 0
+Press any key to continue . . .

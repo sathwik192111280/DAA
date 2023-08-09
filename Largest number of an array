@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int arr[10], i, large;
+ printf("Enter 10 Array Elements: ");
+ for(i=0; i<10; i++)
+ scanf("%d", &arr[i]); 
+ i=0;
+ large = arr[i];
+ while(i<10)
+ {
+ if(large<arr[i])
+ large = arr[i];
+ i++;
+ }
+ printf("\nLargest Number = %d", large);
+ getch();
+ return 0;
+}
+
+
+OUTPUT
+
+Please Enter two integer Values
+29
+63
+GCD of 29 and 63 is = 1
+--------------------------------
+Process exited after 7.583 seconds with return value 0
+Press any key to continue . . .

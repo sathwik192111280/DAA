@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main()
+{
+   int n, t, sum = 0, remainder;
+
+   printf("Enter an integer\n");
+   scanf("%d", &n);
+
+   t = n;
+
+   while (t != 0)
+   {
+      remainder = t % 10;
+      sum       = sum + remainder;
+      t         = t / 10;
+   }
+
+   printf("Sum of digits of %d = %d\n", n, sum);
+
+   return 0;
+}
+
+
+OUTPUT
+
+Enter an integer
+18
+Sum of digits of 18 = 9
+
+--------------------------------
+Process exited after 8.522 seconds with return value 0
+Press any key to continue . . .

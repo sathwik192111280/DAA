@@ -1,0 +1,25 @@
+#include<stdio.h>  
+ int main()    
+{    
+int n, reverse=0, rem;    
+printf("Enter a number: ");    
+  scanf("%d", &n);    
+  while(n!=0)    
+  {    
+     rem=n%10;    
+     reverse=reverse*10+rem;    
+     n/=10;    
+  }    
+  printf("Reversed Number: %d",reverse);    
+return 0;  
+}
+
+
+OUTPUT
+
+
+Enter a number: 123456789
+Reversed Number: 987654321
+--------------------------------
+Process exited after 4.676 seconds with return value 0
+Press any key to continue . . .

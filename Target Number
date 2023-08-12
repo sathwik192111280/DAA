@@ -1,0 +1,57 @@
+#include<stdio.h>
+int n,t,a[20],i,j,temp,c=0;
+int check(int)
+{
+	for(i=1;i<=n;i++)
+	{
+		if(i==t)
+		{
+			c=1;
+			printf("Target found at position %d",i);
+			break;
+		}
+		else
+			continue;
+	}
+	if(c==0)
+		printf("\nTarget not found.");
+}
+int main()
+{
+	printf("enter the no.of numbers:");
+	scanf("%d",&n);
+	printf("enter the target number:");
+	scanf("%d",&t);
+	printf("enter the element:");
+	for(i=1;i<=n;i++)
+	{
+		scanf("%d",&i);
+	}
+	for(i=1;i<=n;i++)
+	{
+		for(j=i+1;j<n;j++)
+		{
+			if(i>j)
+			{
+				temp=i;
+				i=j;
+				j=temp;
+			}
+		}
+	}
+	check(t);
+return 0;
+}
+
+
+
+OUTPUT
+
+
+enter the no.of numbers:4
+enter the target number:2
+enter the element:12
+Target found at position 2
+--------------------------------
+Process exited after 7.772 seconds with return value 0
+Press any key to continue . . .
